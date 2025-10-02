@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerHouse Fitness - Contact</title>
+  <meta name="description" content="Get in touch with PowerHouse Fitness. Book a tour, ask a question, or start your training journey today."> 
+  <!-- Font Imports (Gym) -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Roboto] antialiased text-gray-800 bg-white">
+  <header>
+    <nav class="bg-black/90 text-white sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="font-[Oswald] text-2xl">PowerHouse Fitness</span>
+        </a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-yellow-300">Home</a>
+          <a href="about.html" class="hover:text-yellow-300">About</a>
+          <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <section>
+        <h1 class="font-[Oswald] text-3xl md:text-4xl mb-4">Contact PowerHouse Fitness</h1>
+        <p class="mb-6 text-gray-700">Have questions or want to book a tour? Reach out and our team will respond promptly.</p>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li><strong>Address:</strong> 789 Fitness Blvd, Health District</li>
+          <li><strong>Phone:</strong> (555) 123-POWER</li>
+          <li><strong>Email:</strong> info@powerhousefitness.com</li>
+        </ul>
+      </section>
+      <section>
+        <form id="contact-form" class="bg-white p-6 rounded-lg shadow-md" autocomplete="on" aria-label="Contact form">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1" for="name">Name</label>
+              <input id="name" name="name" type="text" required class="w-full border rounded-md px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" for="email">Email</label>
+              <input id="email" name="email" type="email" required class="w-full border rounded-md px-3 py-2" />
+            </div>
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm font-medium mb-1" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full border rounded-md px-3 py-2"></textarea>
+          </div>
+          <div class="mt-4">
+            <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-md">Send Message</button>
+          </div>
+          <p id="form-status" class="mt-2 text-sm text-green-600 hidden">Message sent! We'll get back to you soon.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-black text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-sm text-gray-300">© 2025 PowerHouse Fitness. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Simple form handler to simulate submission
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      status.classList.remove('hidden');
+      status.textContent = 'Thanks for reaching out! We will respond within 24 hours.';
+      form.reset();
+      setTimeout(() => status.classList.add('hidden'), 4000);
+    });
+  </script>
+</body>
+</html>
