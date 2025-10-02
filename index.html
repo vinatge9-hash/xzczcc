@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerHouse Fitness - Home</title>
+  <meta name="description" content="PowerHouse Fitness is a modern gym offering personal training, group classes, and nutrition coaching to help you achieve your peak." />
+  <!-- Font Imports (Category: Gym) -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Roboto] antialiased text-gray-800 bg-white">
+  <!-- Global Header / Nav -->
+  <header>
+    <nav class="bg-black/90 text-white sticky top-0 z-50 backdrop-blur">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center space-x-2">
+            <span class="font-[Oswald] text-2xl">PowerHouse Fitness</span>
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-yellow-300 transition-colors duration-300">Home</a>
+            <a href="about.html" class="hover:text-yellow-300 transition-colors duration-300">About</a>
+            <a href="#programs" class="hover:text-yellow-300 transition-colors duration-300">Programs</a>
+            <a href="contact.html" class="hover:text-yellow-300 transition-colors duration-300">Contact</a>
+          </div>
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Open menu">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-black/90 px-4 pb-4">
+        <a href="index.html" class="block py-2 text-sm hover:text-yellow-300">Home</a>
+        <a href="about.html" class="block py-2 text-sm hover:text-yellow-300">About</a>
+        <a href="#programs" class="block py-2 text-sm hover:text-yellow-300">Programs</a>
+        <a href="contact.html" class="block py-2 text-sm hover:text-yellow-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section (Background Image with Overlay) -->
+    <section class="min-h-screen flex items-center justify-center relative bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1671970922029-0430d2ae122c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBmaXRuZXNzJTIwY2VudGVyJTIwd2l0aCUyMGVxdWlwbWVudCUyMGFuZCUyMHBlb3BsZSUyMHdvcmtpbmclMjBvdXR8ZW58MHwwfHx8MTc1OTM0MTQ1NHww&ixlib=rb-4.1.0&q=80&w=1080');">
+      <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+      <div class="relative z-10 text-center max-w-2xl px-4">
+        <h1 class="font-[Oswald] text-4xl md:text-6xl font-bold text-white mb-4">PowerHouse Fitness</h1>
+        <p class="font-[Roboto] text-white text-lg md:text-xl mb-8">Transform your body and your life with expert coaching, immersive classes, and science-backed training plans.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="contact.html" class="bg-red-600 hover:bg-red-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300">Join Now</a>
+          <a href="about.html" class="bg-white/0 border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="font-[Oswald] text-3xl md:text-4xl mb-6 text-center">Programs & Services</h2>
+        <p class="text-center mb-12 text-gray-300">Choose a path that fits your goals. We offer personal training, group classes, and comprehensive wellness plans.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <div class="text-4xl mb-4">💪 Personal Training</div>
+            <p>One-on-one coaching with certified trainers to tailor workouts and nutrition.</p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <div class="text-4xl mb-4">🏃 Group Classes</div>
+            <p>High-energy classes including HIIT, strength, and cardio in a motivating setting.</p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <div class="text-4xl mb-4">🥗 Nutrition & Recovery</div>
+            <p>Meal planning, supplementation guidance, and mobility routines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-20 bg-white text-gray-800">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="font-[Oswald] text-3xl md:text-4xl mb-6 text-center">Our Approach</h2>
+        <p class="text-center mx-auto max-w-2xl">We fuse science-based training with real-world results. Our coaches focus on form, consistency, and sustainable progress.</p>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 border rounded-lg text-center">
+            <div class="text-4xl mb-3">🏅 Certified Trainers</div>
+            <p>All coaches hold accredited certifications and ongoing education.</p>
+          </div>
+          <div class="p-6 border rounded-lg text-center">
+            <div class="text-4xl mb-3">🏋️ State-of-the-art Gym</div>
+            <p>Modern equipment, clean facilities, and safe spaces for every member.</p>
+          </div>
+          <div class="p-6 border rounded-lg text-center">
+            <div class="text-4xl mb-3">🗓 Flexible Scheduling</div>
+            <p>Early mornings to late evenings to fit any routine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-14 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="font-[Oswald] text-3xl md:text-4xl mb-6 text-center">What Members Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <blockquote class="bg-white p-6 rounded-lg shadow">
+            <p class="mb-3">“PowerHouse Fitness helped me drop 20 pounds and gain confidence. The trainers are amazing.”</p>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-gray-300" aria-label="avatar"></span>
+              <span>Alex M.</span>
+            </div>
+          </blockquote>
+          <blockquote class="bg-white p-6 rounded-lg shadow">
+            <p class="mb-3">“The group classes keep me accountable and energized. Highly recommend!”</p>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-gray-300" aria-label="avatar"></span>
+              <span>Priya S.</span>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="font-[Oswald] text-3xl md:text-4xl mb-6 text-center">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <img src="https://pixabay.com/get/g90e70f513b5e54ea41a1f8bbb0f566efe73e305cadce57176a448c06eb07bd2ac7afd5e6df0b5a7fcea7d641f84498e2_640.jpg" alt="Gym training session" class="w-full h-64 object-cover rounded-lg" />
+          <img src="https://images.pexels.com/photos/5635567/pexels-photo-5635567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Group fitness class" class="w-full h-64 object-cover rounded-lg" />
+          <img src="https://images.pexels.com/photos/6046978/pexels-photo-6046978.png?auto=compress&cs=tinysrgb&h=650&w=940" alt="Weightlifting area" class="w-full h-64 object-cover rounded-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-12 bg-black text-white text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="font-[Oswald] text-3xl md:text-4xl mb-4">Ready to start your transformation?</h2>
+        <p class="mb-6">Book a free tour or a no-pressure consultation with our trainers.</p>
+        <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold transition-all duration-300">Book a Tour</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-[Oswald] text-xl mb-2">PowerHouse Fitness</h4>
+        <p class="text-gray-300">Powerful training. Real results. Community-driven.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Quick Links</h5>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Hours</h5>
+        <p class="text-sm text-gray-300">Mon-Fri: 5:00 AM - 11:00 PM</p>
+        <p class="text-sm text-gray-300">Sat-Sun: 6:00 AM - 9:00 PM</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Stay Connected</h5>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-yellow-300" aria-label="Instagram">IG</a>
+          <a href="#" class="text-gray-300 hover:text-yellow-300" aria-label="Facebook">FB</a>
+          <a href="#" class="text-gray-300 hover:text-yellow-300" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+
+    // Simple on-view fade-in for sections (Tailwind-friendly)
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => {
+      sec.classList.add('opacity-0', 'transition', 'duration-700', 'delay-0');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+          entry.target.classList.add('opacity-100');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
